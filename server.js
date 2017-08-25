@@ -3,12 +3,14 @@ const path = require('path');
 
 const app = express();
 
+app.set('port', process.env.PORT || 3000);
+
 app.use(express.static(__dirname));
 
-app.listen(3000, () => {
-  console.log('Listening on port 3000');
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
 
-app.get('*', function(req, res) {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
+app.get('/', function(req, res) {
+  res.render(path.resolve(__dirname, 'index.html'));
 });
