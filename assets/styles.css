@@ -1,0 +1,42 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  background-color: black;
+}
+
+#mapContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+#map {
+  width: 40vw;
+  height: 40vw;
+}
+
+.listView {
+  display: inline;
+  float: right;
+}
+
+.listItem {
+  border-radius: 1vw;
+}
+.listItem:hover {
+  border: 0.25em solid black;
+}
+.listContainer {
+  width: 600px;
+}
