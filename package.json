@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "lint": "eslint src",
     "prebuild": "rimraf public",
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js",
